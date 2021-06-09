@@ -137,3 +137,38 @@ tasks.forEach(task => {
 console.log(tasks_name);
 console.log(tasks_map);
 
+//--------------------------------------------------Nivell 2--------------------------------------------------
+
+
+// Realitzar un programa en ES6, amb al menys una funció.
+// Aquest programa demana a l'usuari dos nombres de l'1 a l'10 (con promp es suficient). 
+// Un cop introduïts, es mostra per consola la taula de multiplicar del número 1 que va fins al número 2.
+
+// Per exemple, si l'usuari introdueix 3 i 5:
+
+// 3 X 1 = 3
+// 3 X 2 = 6
+// 3 X 3 = 9
+// 3 X 4 = 12
+// 3 X 5 = 15
+
+const multiply_n2 = (n1, n2) => {
+    for (var i = 1; i <= n2; i++) {
+        let res = n1 * i;
+        console.log(n1 + ' x ' + i + ' = ' + res);
+
+        document.write(`<p>${res}</p><br>`);
+    }
+}
+
+var n1 = prompt("Por favor introduzca un número del 1-10", "");
+while (n1 < 1 || n1 > 10) {
+    alert('Verifique el número introducido!!!');
+    var n1 = prompt("Por favor introduzca un número del 1-10", "");
+}
+var n2 = prompt("Por favor introduzca su segundo número del 1-10", "");
+while (n2 < 0 || n2 > 10) {
+    alert('Verifique el número introducido!!!');
+    var n2 = prompt("Por favor introduzca su segundo número del 1-10", "")
+}
+multiply_n2(n1, n2);
