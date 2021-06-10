@@ -138,7 +138,7 @@ console.log(tasks_name);
 console.log(tasks_map);
 
 //--------------------------------------------------Nivell 2--------------------------------------------------
-
+// Exercici 7
 
 // Realitzar un programa en ES6, amb al menys una funció.
 // Aquest programa demana a l'usuari dos nombres de l'1 a l'10 (con promp es suficient). 
@@ -157,7 +157,7 @@ const multiply_n2 = (n1, n2) => {
         let res = n1 * i;
         console.log(n1 + ' x ' + i + ' = ' + res);
 
-        document.write(`<p>${res}</p><br>`);
+        // document.write(`<p>${res}</p><br>`);
     }
 }
 
@@ -172,3 +172,8 @@ while (n2 < 0 || n2 > 10) {
     var n2 = prompt("Por favor introduzca su segundo número del 1-10", "")
 }
 multiply_n2(n1, n2);
+
+// Exercici 8
+
+// Modificar l'exercici anterior perquè els números s'introdueixin a través d'un formulari (amb validacions),
+// i que la taula de multiplicar la mostri en una taula HTML
