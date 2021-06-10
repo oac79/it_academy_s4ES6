@@ -87,24 +87,24 @@ console.log(reverse_str('Pluma'));
 
 // Exercici 5
 // Modifica la funció 'a()' per a reemplaçar la promesa per aync/await:
+function doMoreWork() {
+    return 'Do More Work';
+}
 
 async function b() {
     // tasques asíncrones , que triguen una estona..
-    console.log('se ejecuta la función b()');
+    return 'Hello world';
 }
 
-function a() {
+async function a() {
     // Ens esperem que la funció b acabi
-    // Ens esperem que la funció b acabi
-    // const response = b();
-    // console.log(response);
-    // const value = await b();
-    // console.log(value);
-    //      b().then() = > {
-    //         doMoreWork();
-    //   }
+    const response = await b();
+    console.log('response----> ' + response);
+    console.log(doMoreWork());
 
 }
+
+a();
 
 // Exercici 6
 // Tenim un array de tasques i volem aconseguir un array que contingui únicament els noms de les tasques. 
