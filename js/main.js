@@ -151,7 +151,6 @@ console.log(tasks_map);
 // 3 X 3 = 9
 // 3 X 4 = 12
 // 3 X 5 = 15
-
 const multiply_n2 = (n1, n2) => {
     for (var i = 1; i <= n2; i++) {
         let res = n1 * i;
@@ -161,19 +160,16 @@ const multiply_n2 = (n1, n2) => {
     }
 }
 
-var n1 = prompt("Por favor introduzca un número del 1-10", "");
-while (n1 < 1 || n1 > 10) {
-    alert('Verifique el número introducido!!!');
-    var n1 = prompt("Por favor introduzca un número del 1-10", "");
-}
-var n2 = prompt("Por favor introduzca su segundo número del 1-10", "");
-while (n2 < 0 || n2 > 10) {
-    alert('Verifique el número introducido!!!');
-    var n2 = prompt("Por favor introduzca su segundo número del 1-10", "")
-}
-multiply_n2(n1, n2);
 
-// Exercici 8
+// var n1 = prompt("Por favor introduzca un número del 1-10", "");
+// while (n1 < 1 || n1 > 10) {
+//     alert('Verifique el número introducido!!!');
+//     var n1 = prompt("Por favor introduzca un número del 1-10", "");
+// }
+// var n2 = prompt("Por favor introduzca su segundo número del 1-10", "");
+// while (n2 < 0 || n2 > 10) {
+//     alert('Verifique el número introducido!!!');
+//     var n2 = prompt("Por favor introduzca su segundo número del 1-10", "")
+// }
+// multiply_n2(n1, n2);
 
-// Modificar l'exercici anterior perquè els números s'introdueixin a través d'un formulari (amb validacions),
-// i que la taula de multiplicar la mostri en una taula HTML

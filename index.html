@@ -6,11 +6,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ES6</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <div class="navbar-brand" href="#">SPRINT 4 ES6</divF>
+    </nav>
+    <div class="container p-4">
 
+        <h3 class="title text-center mt-2">Multiplicar un número</h3>
+        <p class="subtitle text-center font-italic">Introduce un número e introduce un segundo número que mostrará
+            hasta
+            que
+            posición muliplicar.</p>
+
+        <div class="row">
+            <div class="col-6">
+                <form action="#" id="form-multiply">
+                    <div class="form-group w-75">
+
+                        <label for="in-num1">Introduce un número de 1-10</label>
+                        <input class="form-control" type="number" name="in-num1" id="in-num1">
+                        <small id="n1-help" style="color: red; display: none;">*el número introducido tiene que ser de
+                            1-10</small>
+                        <br>
+                        <label for="in-num2">Introduce un número de 1-10</label>
+                        <input class="form-control" type="number" name="in-num2" id="in-num2">
+                        <small id="n2-help" style="color: red; display: none;">*el número introducido tiene que ser de
+                            1-10</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="btn-multiply">multiplicar</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Número 1</th>
+                            <th scope="col">Multiplicado*</th>
+                            <th scope="col">Número 2</th>
+                            <th scope="col">=</th>
+                            <th scope="col">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="./bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/form_multiply.js"></script>
 </body>
 
 </html>
